@@ -219,6 +219,10 @@ document.addEventListener("scroll", function () {
       "slideThirdImage 1.4s forwards cubic-bezier(0.22, 1, 0.36, 1)";
   }
   
+  /* 
+   * This part is dynamically add all elements that use class name skill
+   * Manually adding animation to all elements code is comment-out bellow this forEach block
+   */
   skills.forEach(skill => {
     console.log(skill);
     if((skill.getBoundingClientRect().y + ((skill.getBoundingClientRect().height * 3 ) / 4))  < clientHeight){
